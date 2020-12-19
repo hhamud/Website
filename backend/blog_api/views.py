@@ -4,6 +4,8 @@ from rest_framework.views import APIView
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from blog_api.models import Post
 from blog_api.serializer import PostSerializer
+from django.views.generic import TemplateView
+
 
 class PostListView(ListAPIView):
     queryset = Post.objects.order_by('-date_created')

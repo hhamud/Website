@@ -4,9 +4,8 @@ from django.template.defaultfilters import slugify
 import os
 
 class Catagory(models.TextChoices):
-    WORLD = 'world'
-    TECHNOLOGY = 'technology'
-    CULTURE = 'culture'
+    BLOG = 'blog'
+    PORTFOLIO = 'portfolio'
 
 
 
@@ -14,16 +13,14 @@ class Post(models.Model):
     title = models.CharField(max_length=50)
     excerpt = models.CharField(max_length=200)
     thumbnail = models.ImageField(upload_to='images/')
+    github_link = models.CharField(max_length=50, blank=True)
+    demo_link = models.CharField(max_length=200, blank=True)
     date_created = models.DateTimeField(auto_now_add=datetime.now)
     date_updated = models.DateTimeField(auto_now=datetime.now)
-    catagory = models.CharField(max_length=50, choices=Catagory.choices, default=Catagory.WORLD)
+    catagory = models.CharField(max_length=50, choices=Catagory.choices, default=Catagory.BLOG)
     content = models.TextField()
     slug = models.SlugField()
     featured = models.BooleanField(default=False)
-
-   
-    
-
 
 
     def save(self, *args, **kwargs):
