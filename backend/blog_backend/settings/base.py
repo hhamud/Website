@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 BACKEND_DIR = BASE_DIR
-FRONTEND_DIR = os.path.abspath(os.path.join(BACKEND_DIR, '..', 'frontend'))
+FRONTEND_DIR = os.path.abspath(os.path.join(BACKEND_DIR, '..', '..', 'frontend'))
 
 
 # Application definition
