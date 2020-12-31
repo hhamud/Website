@@ -5,7 +5,7 @@ import "../../App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/css/bootstrap.css.map'
-import heroimage from "../../assets/img/hero-img.png";
+import heroimage from "../../assets/clipart-images-laptop-5/clipart-images-laptop-5-transparent.png";
 
 
 

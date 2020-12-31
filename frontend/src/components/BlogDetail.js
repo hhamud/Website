@@ -25,8 +25,9 @@ class BlogDetail extends React.Component {
           <div className="container">
             <div className="row justify-content-center">
               <h1 className="portfolio-title">{this.props.post.title}</h1>
-              <div className="col-lg-12 offset-md-3">
+              <div className="col-lg-12">
                 <img
+                  style={{ display: "block", margin: "auto" }}
                   src={this.props.post.thumbnail}
                   className="img-fluid"
                   alt=""
