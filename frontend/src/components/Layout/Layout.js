@@ -16,8 +16,9 @@ class Layout extends React.Component {
   }
 
   componentDidMount() {
+    let port = process.env.PORT || 80;
     axios
-      .get("http://localhost:8000/api/blog")
+      .get(`http://localhost:${port}/api/blog`)
       .then((res) => {
         this.setState({ posts: res.data });
         this.setState({ isLoading: false });
