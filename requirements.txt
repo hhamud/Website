@@ -1,7 +1,9 @@
 asgiref==3.3.1
 astroid==2.4.2
+dj-database-url==0.5.0
 Django==3.1.4
 django-cors-headers==3.6.0
+django-heroku==0.3.1
 django-rest-framework==0.1.0
 django-summernote==0.8.11.6
 djangorestframework==3.12.2
@@ -18,4 +20,5 @@ six==1.15.0
 sqlparse==0.4.1
 toml==0.10.2
 waitress==1.4.4
+whitenoise==5.2.0
 wrapt==1.12.1
