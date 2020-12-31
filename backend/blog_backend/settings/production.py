@@ -13,6 +13,6 @@ SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 
 
 
-ALLOWED_HOSTS = ["0.0.0.0", "localhost", "agile-citadel-92315.herokuapp.com"]
+ALLOWED_HOSTS = ["0.0.0.0", "localhost","127.0.0.1", "agile-citadel-92315.herokuapp.com"]
 
 
