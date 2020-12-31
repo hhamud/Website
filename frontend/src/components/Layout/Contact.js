@@ -8,7 +8,7 @@ class Contact extends React.Component {
       <section id="contact" className="contact">
         <div className="container">
           <div className="section-title" data-aos="fade-up">
-            <h2>Contact Us</h2>
+            <h2>Contact Me</h2>
           </div>
 
           <div className="row">
@@ -18,7 +18,7 @@ class Contact extends React.Component {
               data-aos-delay="100"
             >
               <div className="contact-about">
-                <h3>Vesperr</h3>
+                <h3>Hamza Hamud</h3>
                 <p>
                   Cras fermentum odio eu feugiat. Justo eget magna fermentum
                   iaculis eu non diam phasellus. Scelerisque felis imperdiet
@@ -26,14 +26,8 @@ class Contact extends React.Component {
                   congue.
                 </p>
                 <div className="social-links">
-                  <a href="#" className="twitter">
-                    <i className="icofont-twitter"></i>
-                  </a>
-                  <a href="#" className="facebook">
-                    <i className="icofont-facebook"></i>
-                  </a>
-                  <a href="#" className="instagram">
-                    <i className="icofont-instagram"></i>
+                  <a href="#" className="github">
+                    <i className="icofont-github"></i>
                   </a>
                   <a href="#" className="linkedin">
                     <i className="icofont-linkedin"></i>

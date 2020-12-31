@@ -2,11 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 class BlogDetail extends React.Component {
-  constructor(props) {
-    super(props);
-    console.log(props.post);
-  }
-
   render() {
     return (
       <div>
@@ -28,8 +23,8 @@ class BlogDetail extends React.Component {
         </section>
         <section id="portfolio-details" className="portfolio-details">
           <div className="container">
-            <div className="row">
-            <h1 className="portfolio-title">{this.props.post.title}</h1>
+            <div className="row justify-content-center">
+              <h1 className="portfolio-title">{this.props.post.title}</h1>
               <div className="col-lg-12 offset-md-3">
                 <img
                   src={this.props.post.thumbnail}

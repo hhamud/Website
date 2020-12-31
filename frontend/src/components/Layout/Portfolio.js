@@ -7,13 +7,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "venobox/venobox/venobox.css";
 
 class Portfolio extends React.Component {
-  constructor(props) {
-    super(props);
-    console.log(props.posts);
-    const BASE_URL = "http://localhost:3001/blog/";
-    console.log(BASE_URL);
-  }
-
   componentDidMount() {
     AOS.init();
   }
@@ -23,18 +16,15 @@ class Portfolio extends React.Component {
       <section id="portfolio" className="portfolio">
         <div className="section-title" data-aos="fade-up">
           <h2>Portfolio</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+          <p>Here are the projects that I have completed</p>
         </div>
         <div className="container">
           <div className="row justify-content-center">
             {this.props.posts
               .filter((post) => post.catagory === "portfolio")
               .map((post, i) => (
-                <div
-                  className="col-md-6 col-lg-4 rounded card__hover-area"
-                  key={i}
-                >
-                  <div className="card">
+                <div className="rounded card__hover-area" key={i}>
+                  <div className="portfolio-card">
                     <div
                       className="card__front"
                       style={{
@@ -48,16 +38,20 @@ class Portfolio extends React.Component {
                       <h4>{post.title}</h4>
                       <p>{post.excerpt}</p>
                       <div className="d-flex">
-                        {post.github_link ? <a href={post.github_link} class="btn-github">
-                          Github
-                        </a> : ""}
-                        {post.demo_link ? <a
-                          href={post.demo_link}
-                          id="#hero"
-                          class="btn-live-demo"
-                        >
-                          Demo
-                        </a> : ""}
+                        {post.github_link ? (
+                          <a href={post.github_link} class="btn-github">
+                            Code
+                          </a>
+                        ) : (
+                          ""
+                        )}
+                        {post.demo_link ? (
+                          <a href={post.demo_link} class="btn-live-demo">
+                            Demo
+                          </a>
+                        ) : (
+                          ""
+                        )}
                       </div>
                     </div>
                   </div>

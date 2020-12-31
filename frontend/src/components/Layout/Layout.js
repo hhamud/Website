@@ -8,7 +8,6 @@ import BlogDetail from "../BlogDetail";
 import { Route, Switch } from "react-router-dom";
 import axios from "axios";
 import Footer from "./Footer";
-import Contact from "./Contact";
 
 class Layout extends React.Component {
   constructor(props) {
@@ -54,7 +53,6 @@ class Layout extends React.Component {
                 <Main />
                 <About />
                 <Portfolio posts={this.state.posts} />
-                <Contact />
               </Fragment>
             )}
           />

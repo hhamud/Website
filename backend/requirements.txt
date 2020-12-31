@@ -1,0 +1,11 @@
+asgiref
+django-cors-headers
+django
+django_summernote
+Pillow
+psycopg2
+pytz
+django_rest_framework
+setuptools
+sqlparse
+waitress
