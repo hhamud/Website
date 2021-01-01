@@ -20,10 +20,6 @@ import django_heroku
 django_heroku.settings(locals())
 
 
-CLOUD_NAME = 
-CLOUD_API_KEY = 
-CLOUD_API_SECRET = 
-
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.environ['CLOUD_NAME'],
