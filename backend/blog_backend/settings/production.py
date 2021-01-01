@@ -18,3 +18,18 @@ ALLOWED_HOSTS = ["0.0.0.0", "localhost","127.0.0.1", "agile-citadel-92315.heroku
 # Configure Django App for Heroku.
 import django_heroku
 django_heroku.settings(locals())
+
+
+CLOUD_NAME = 
+CLOUD_API_KEY = 
+CLOUD_API_SECRET = 
+
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': os.environ['CLOUD_NAME'],
+    'API_KEY': os.environ['CLOUD_API_KEY'],
+    'API_SECRET': os.environ['CLOUD_API_SECRET'],
+}
+
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
