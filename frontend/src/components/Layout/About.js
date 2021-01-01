@@ -24,9 +24,8 @@ class About extends React.Component {
           <div className="row content justify-content-center">
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay="150">
               <p>
-                Hi and welcome to my website. I created this website
-                for the purpose of being able to showcase what I am capable of and to be able to 
-                also jot down a few of my thoughts online. 
+                Hamza Hamud holds a masters in Chemical Engineering from the University of Sheffield.
+                When not coding or writing, he enjoys reading and taking long walks. 
               </p>
             </div>
             

@@ -123,11 +123,12 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #555555;
+  color: black;
   padding: 8px 0 12px 25px;
   transition: 0.3s;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  font-weight: 650;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -151,8 +152,8 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu .drop-down ul {
   display: block;
   position: absolute;
-  left: 25px;
   top: calc(100% + 30px);
+  right: 0;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
@@ -167,6 +168,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   top: 100%;
   visibility: visible;
+  right: 0;
 }
 
 .nav-menu .drop-down li {
@@ -1006,15 +1008,20 @@ section {
   flex-direction: column;
   padding: 2em;
   transform: rotateY(.5turn);
-  font-family: 'Georgia';
 }
 
-.card__back h3 {
-  font-family: 'Arial Narrow';
+.card__back h4 {
   text-transform: uppercase;
   letter-spacing: .1em;
   border-bottom: 2px solid black;
   line-height: 2em;
+  padding: 0 25px;
+  font-weight: 500;
+}
+
+.card__back p {
+  padding: 15px;
+
 }
 
 .card__hover-area:hover .card__back {
@@ -1470,6 +1477,7 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 20px;
+  font-family: "Raleway", sans-serif;
 }
 
 .portfolio-details .portfolio-title {

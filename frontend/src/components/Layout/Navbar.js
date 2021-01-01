@@ -22,11 +22,11 @@ class Navbar extends React.Component {
   jquerynavbar = () => {
     if ($(".nav-menu").length) {
       var $mobile_nav = $(".nav-menu").clone().prop({
-        class: "mobile-nav d-lg-none",
+        class: "mobile-nav d-sm-block",
       });
       $("body").append($mobile_nav);
       $("body").prepend(
-        '<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>'
+        '<button type="button" class="mobile-nav-toggle d-sm-none"><i class="icofont-navigation-menu"></i></button>'
       );
       $("body").append('<div class="mobile-nav-overly"></div>');
 
@@ -63,7 +63,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className="nav-menu d-none d-lg-block">
+      <nav className="nav-menu d-none d-sm-block">
         <ul>
           <li className="active">
             <Link to="/">Home</Link>
