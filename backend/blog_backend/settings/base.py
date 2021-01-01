@@ -121,7 +121,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BACKEND_DIR, 'media/')
 
-SUMMERNOTE_THEME = 'bs4'
+SUMMERNOTE_THEME = 'bs3'
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
@@ -135,6 +135,3 @@ REST_FRAMEWORK = {
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-# Configure Django App for Heroku.
-import django_heroku
-django_heroku.settings(locals())

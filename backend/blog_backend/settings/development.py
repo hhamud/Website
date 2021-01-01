@@ -10,4 +10,4 @@ SECRET_KEY = '57ow(yx*0ku7d3kvfv1&bkop#7g6fm$_3h%a$ok_&ay5dd_x&x'
 
 
 
-ALLOWED_HOSTS = ["0.0.0.0", "localhost"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1"]

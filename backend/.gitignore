@@ -1,5 +1,4 @@
 venv3.9/
 .vscode
 __pycache__/
-media/
 .env
