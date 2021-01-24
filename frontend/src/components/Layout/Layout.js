@@ -37,7 +37,7 @@ class Layout extends React.Component {
       <body>
         <Header posts={this.state.posts} />
         <Switch>
-          <Route exact path="/blog">
+          <Route path="/blog/">
             <BlogList posts={this.state.posts} />
           </Route>
           {this.state.posts
@@ -48,7 +48,7 @@ class Layout extends React.Component {
               </Route>
             ))}
           <Route
-            path="/"
+            exact path="/"
             render={(props) => (
               <Fragment>
                 <Main />
