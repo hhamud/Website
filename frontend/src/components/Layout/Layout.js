@@ -43,7 +43,7 @@ class Layout extends React.Component {
           {this.state.posts
             .filter((post) => post.catagory === "blog")
             .map((post, i) => (
-              <Route key={i} path={`/blog/${post.slug}`}>
+              <Route key={i} path={`/blog/${post.slug}/`}>
                 <BlogDetail post={post} />
               </Route>
             ))}
