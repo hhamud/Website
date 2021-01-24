@@ -12,11 +12,13 @@ import Footer from "./Footer";
 class Layout extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isLoading: true };
+    this.state = { isLoading: true, posts: "" };
   }
 
   componentDidMount() {
-    let base_url = process.env.REACT_APP_API_ENDPOINT  || "https://agile-citadel-92315.herokuapp.com" ;
+    let base_url =
+      process.env.REACT_APP_API_ENDPOINT ||
+      "https://agile-citadel-92315.herokuapp.com";
     axios
       .get(`${base_url}/api/blog/`)
       .then((res) => {
@@ -37,26 +39,23 @@ class Layout extends React.Component {
       <body>
         <Header posts={this.state.posts} />
         <Switch>
-          <Route path="/blog/">
+          <Route exact path="/blog">
             <BlogList posts={this.state.posts} />
           </Route>
           {this.state.posts
             .filter((post) => post.catagory === "blog")
             .map((post, i) => (
-              <Route key={i} path={`/blog/${post.slug}/`}>
+              <Route key={i} exact path={`/blog/${post.slug}/`}>
                 <BlogDetail post={post} />
               </Route>
             ))}
-          <Route
-            exact path="/"
-            render={(props) => (
+          <Route exact path="/">
               <Fragment>
                 <Main />
                 <About />
                 <Portfolio posts={this.state.posts} />
               </Fragment>
-            )}
-          />
+          </Route>
         </Switch>
         <Footer />
       </body>
