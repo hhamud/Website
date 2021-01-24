@@ -18,7 +18,7 @@ class Layout extends React.Component {
   componentDidMount() {
     let base_url = process.env.REACT_APP_API_ENDPOINT  || "https://agile-citadel-92315.herokuapp.com" ;
     axios
-      .get(`${base_url}/api/blog`)
+      .get(`${base_url}/api/blog/`)
       .then((res) => {
         this.setState({ posts: res.data });
         this.setState({ isLoading: false });
